@@ -924,7 +924,7 @@
 
       @media (max-width: 768px) {
         nav {
-          padding: 16px 24px;
+          padding: 40px 20px;
         }
         .nav-links {
           display: none;
@@ -933,15 +933,37 @@
           display: flex;
         }
 
+        .hero {
+          height: 100vh;
+          min-height: 600px;
+          align-items: center;
+        }
+
         .hero-content {
-          padding: 0 28px;
+          padding: 0 24px;
           max-width: 100%;
+          text-align: left;
         }
+
         .hero-title {
-          font-size: clamp(2.2rem, 8vw, 3.4rem);
+          font-size: 4rem; /* BIGGER */
+          line-height: 1.15;
+          margin-bottom: 16px;
         }
+
         .hero-sub {
+          font-size: 1rem;
           max-width: 100%;
+          margin-bottom: 24px;
+        }
+
+        .hero-eyebrow {
+          font-size: 0.65rem;
+          margin-bottom: 14px;
+        }
+
+        .hero-content {
+          transform: translateY(-10px);
         }
 
         .about {
@@ -1236,6 +1258,15 @@
         text-transform: uppercase;
         text-align: center;
       }
+      @media (max-width: 360px) {
+        .hero-title {
+          font-size: 2.6rem;
+        }
+
+        .hero-sub {
+          font-size: 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1251,7 +1282,7 @@
 
     <!-- NAV -->
     <nav>
-      <div class="logo">CAK<span>Ë</span></div>
+      <div class="logo">DUNNY'S CAK<span>Ë</span></div>
       <ul class="nav-links">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -1260,7 +1291,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <button class="btn-user">Nicki Pirhadi</button>
         <div class="cart-icon">
           🛒
           <span class="cart-badge">2</span>
